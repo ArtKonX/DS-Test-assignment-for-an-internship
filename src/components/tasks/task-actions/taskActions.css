@@ -1,0 +1,67 @@
+.task-checkbox:checked~label {
+    text-decoration: line-through;
+}
+
+.task-checkbox {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+}
+
+.task-checkbox:hover {
+    transition: 1s;
+}
+
+label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #ccc;
+}
+
+.task-checkbox:focus ~ label::before {
+    outline: 2px solid #07d618;
+    border-color: #00b50e;
+}
+
+.task-checkbox:checked+label::before {
+    border-color: #00b50e;
+    background-image: url('../../../img//checkbox-images//checked-green.png');
+    background-size: contain;
+}
+
+.btn-del {
+    font-size: 0.9rem;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.552);
+    background-color: rgba(0, 0, 0, 0.503);
+    border: 1px solid transparent;
+    padding: 5px;
+    transition: 1s;
+    height: 40px;
+}
+
+.btn-del:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    transition: 1s;
+    color: white;
+}
+
+.btn-del:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+    outline: 2px solid white;
+    border: 1px solid transparent;
+    transition: 1.5s;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+}
+
+.time-date {
+    font-family: sans-serif;
+    margin: 100px auto 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    max-width: 700px;
+    padding: 20px 75px;
+    text-align: center;
+    border-radius: 15px;
+}
